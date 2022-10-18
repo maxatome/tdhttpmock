@@ -1,0 +1,8 @@
+github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/jarcoal/httpmock v1.2.1-0.20221022183827-0f002063db7c h1:+mS3pcUxRC8S5pKmr8GAdjIWcturp3jE89oaJkj/kwk=
+github.com/jarcoal/httpmock v1.2.1-0.20221022183827-0f002063db7c/go.mod h1:3yb8rc4BI7TCBhFY8ng0gjuLKJNquuDNiPaZjnENuYg=
+github.com/jarcoal/httpmock v1.2.1-0.20221107220010-e78b81264f6c h1:6Qw5Ud4Z7d8XJVF37IMuxIuih2qXON/EsmL0E8ChMGw=
+github.com/jarcoal/httpmock v1.2.1-0.20221107220010-e78b81264f6c/go.mod h1:3yb8rc4BI7TCBhFY8ng0gjuLKJNquuDNiPaZjnENuYg=
+github.com/maxatome/go-testdeep v1.12.0 h1:Ql7Go8Tg0C1D/uMMX59LAoYK7LffeJQ6X2T04nTH68g=
+github.com/maxatome/go-testdeep v1.12.0/go.mod h1:lPZc/HAcJMP92l7yI6TRz1aZN5URwUBUAfUNvrclaNM=
