@@ -4,5 +4,11 @@ github.com/jarcoal/httpmock v1.2.1-0.20221022183827-0f002063db7c h1:+mS3pcUxRC8S
 github.com/jarcoal/httpmock v1.2.1-0.20221022183827-0f002063db7c/go.mod h1:3yb8rc4BI7TCBhFY8ng0gjuLKJNquuDNiPaZjnENuYg=
 github.com/jarcoal/httpmock v1.2.1-0.20221107220010-e78b81264f6c h1:6Qw5Ud4Z7d8XJVF37IMuxIuih2qXON/EsmL0E8ChMGw=
 github.com/jarcoal/httpmock v1.2.1-0.20221107220010-e78b81264f6c/go.mod h1:3yb8rc4BI7TCBhFY8ng0gjuLKJNquuDNiPaZjnENuYg=
+github.com/jarcoal/httpmock v1.2.1-0.20221108194521-59c197c7f946 h1:UClGvrWCX/mONL2go7lHpRKbalHLCVShBKNJMw+gOIM=
+github.com/jarcoal/httpmock v1.2.1-0.20221108194521-59c197c7f946/go.mod h1:3yb8rc4BI7TCBhFY8ng0gjuLKJNquuDNiPaZjnENuYg=
+github.com/jarcoal/httpmock v1.2.1-0.20221108215555-dfc8f19478d9 h1:GgZh18Who8XtSTJMO2rUitmauwcX6Nq1+RslSOpJgKc=
+github.com/jarcoal/httpmock v1.2.1-0.20221108215555-dfc8f19478d9/go.mod h1:3yb8rc4BI7TCBhFY8ng0gjuLKJNquuDNiPaZjnENuYg=
+github.com/jarcoal/httpmock v1.2.1-0.20221108221151-f69cd5e7f9cf h1:lnt1bDQ8h9pBdDyaQ+V9ipXF1HvyzRdZ0LDABmrmthM=
+github.com/jarcoal/httpmock v1.2.1-0.20221108221151-f69cd5e7f9cf/go.mod h1:3yb8rc4BI7TCBhFY8ng0gjuLKJNquuDNiPaZjnENuYg=
 github.com/maxatome/go-testdeep v1.12.0 h1:Ql7Go8Tg0C1D/uMMX59LAoYK7LffeJQ6X2T04nTH68g=
 github.com/maxatome/go-testdeep v1.12.0/go.mod h1:lPZc/HAcJMP92l7yI6TRz1aZN5URwUBUAfUNvrclaNM=
