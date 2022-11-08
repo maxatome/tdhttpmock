@@ -7,6 +7,6 @@
 //go:build !go1.18
 // +build !go1.18
 
-package testdeep_test
+package tdhttpmock_test
 
 type any = interface{}

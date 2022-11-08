@@ -39,19 +39,16 @@ func marshaledBody(
 
 		// If expectedBody is a TestDeep operator, try to ask it the type
 		// behind it.
-		op, ok := expectedBody.(td.TestDeep)
-		if ok {
+		if op, ok := expectedBody.(td.TestDeep); ok {
 			bodyType = op.TypeBehind()
-			if bodyType == nil {
-				// As the expected body type cannot be guessed, try to
-				// unmarshal in an any
-				bodyType = interfaceType
-			} else {
-				bodyType = reflect.TypeOf(expectedBody)
-				if bodyType == nil {
-					bodyType = interfaceType
-				}
-			}
+		} else {
+			bodyType = reflect.TypeOf(expectedBody)
+		}
+
+		// As the expected body type cannot be guessed, try to
+		// unmarshal in an any
+		if bodyType == nil {
+			bodyType = interfaceType
 		}
 
 		bodyPtr := reflect.New(bodyType)
@@ -81,7 +78,7 @@ func marshaledBody(
 //	  httpmock.NewStringResponder(200, "OK test"))
 //
 // The name of the returned [httpmock.Matcher] is auto-generated (see
-// [httpmock.NewMatcher]). To name it explicitely, use
+// [httpmock.NewMatcher]). To name it explicitly, use
 // [httpmock.Matcher.WithName] as in:
 //
 //	tdhttpmock.Body("OK!\n").WithName("01-body-OK")
@@ -144,7 +141,7 @@ func Body(expectedBody any) httpmock.Matcher {
 //	  httpmock.NewStringResponder(200, "OK bob"))
 //
 // The name of the returned [httpmock.Matcher] is auto-generated (see
-// [httpmock.NewMatcher]). To name it explicitely, use
+// [httpmock.NewMatcher]). To name it explicitly, use
 // [httpmock.Matcher.WithName] as in:
 //
 //	tdhttpmock.JSONBody(td.JSONPointer("/name", "Bob")).WithName("01-bob")
@@ -182,7 +179,7 @@ func JSONBody(expectedBody any) httpmock.Matcher {
 //	  httpmock.NewStringResponder(200, "OK bob"))
 //
 // The name of the returned [httpmock.Matcher] is auto-generated (see
-// [httpmock.NewMatcher]). To name it explicitely, use
+// [httpmock.NewMatcher]). To name it explicitly, use
 // [httpmock.Matcher.WithName] as in:
 //
 //	tdhttpmock.XMLBody(td.Struct(Person{Name: "Bob"})).WithName("01-bob")
@@ -219,7 +216,7 @@ func XMLBody(expectedBody any) httpmock.Matcher {
 //	  httpmock.NewStringResponder(200, "OK account"))
 //
 // The name of the returned [httpmock.Matcher] is auto-generated (see
-// [httpmock.NewMatcher]). To name it explicitely, use
+// [httpmock.NewMatcher]). To name it explicitly, use
 // [httpmock.Matcher.WithName] as in:
 //
 //	tdhttpmock.Header(td.ContainsKey("X-Custom")).WithName("01-header-custom")
@@ -256,7 +253,7 @@ func Header(expectedHader any) httpmock.Matcher {
 //	  httpmock.NewStringResponder(200, "OK cookies"))
 //
 // The name of the returned [httpmock.Matcher] is auto-generated (see
-// [httpmock.NewMatcher]). To name it explicitely, use
+// [httpmock.NewMatcher]). To name it explicitly, use
 // [httpmock.Matcher.WithName] as in:
 //
 //	tdhttpmock.Cookies([]*http.Cookies{}).WithName("01-cookies")
