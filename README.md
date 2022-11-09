@@ -4,5 +4,5 @@
 [![Coverage Status](https://coveralls.io/repos/github/maxatome/tdhttpmock/badge.svg?branch=master)](https://coveralls.io/github/maxatome/tdhttpmock?branch=master)
 [![GoDoc](https://pkg.go.dev/badge/github.com/maxatome/tdhttpmock)](https://pkg.go.dev/github.com/maxatome/tdhttpmock)
 
-The marriage of [go-testdeep](github.com/maxatome/go-testdeep) and
-[httpmock](github.com/jarcoal/httpmock).
+The marriage of [go-testdeep](https://github.com/maxatome/go-testdeep) and
+[httpmock](https://github.com/jarcoal/httpmock).
