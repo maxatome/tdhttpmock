@@ -1,4 +1,4 @@
-// Copyright (c) 2022, Maxime Soulé
+// Copyright (c) 2022-2023, Maxime Soulé
 // All rights reserved.
 //
 // This source code is licensed under the BSD-style license found in the
@@ -17,6 +17,10 @@ import (
 	"github.com/jarcoal/httpmock"
 	"github.com/maxatome/go-testdeep/td"
 )
+
+func init() {
+	httpmock.IgnoreMatcherHelper()
+}
 
 var interfaceType = reflect.TypeOf((*any)(nil)).Elem()
 
